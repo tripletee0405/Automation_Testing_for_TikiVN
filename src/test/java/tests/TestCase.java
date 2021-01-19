@@ -141,7 +141,7 @@ public class TestCase extends BaseTest implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         try {
-            ExcelUtils.writeExcel(CELLNUM, i++, "./AssignmentFinal.xlsx", "pass");
+            ExcelUtils.writeExcel(CELLNUM, i++, "./data.xlsx", "pass");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -151,7 +151,7 @@ public class TestCase extends BaseTest implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         try {
-            ExcelUtils.writeExcel(CELLNUM, i++, "./AssignmentFinal.xlsx", "fail");
+            ExcelUtils.writeExcel(CELLNUM, i++, "./data.xlsx", "fail");
         } catch (IOException e) {
             e.printStackTrace();
         }
